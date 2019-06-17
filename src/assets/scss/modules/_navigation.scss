@@ -1,0 +1,127 @@
+// Navigation breakpoints
+.mobile-menu,
+.site-title-bar {
+  @include hide-for(medium);
+}
+//
+.desktop-menu,
+.site-navigation .top-bar-left {
+  @include show-for(medium);
+}
+
+// Site title
+.site-desktop-title a {
+  font-weight: bold;
+}
+
+// WP post navigation
+.post-navigation {
+  @include clearfix;
+}
+
+.nav-previous {
+  float:left;
+}
+
+.nav-next {
+  float:right;
+}
+
+// custom
+
+header.site-header, .top-bar, .top-bar ul {
+  background-color: $white;
+}
+
+.main-nav {
+  z-index: 3;
+  a {
+    color: #FFF;
+    font-size: 1rem !important;
+  }
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: #FFF transparent;
+  }
+  li.current-menu-item a, li.menu-item a:hover {
+    color: #FC5B00 !important;
+  }
+  .is-dropdown-submenu {
+    top: 2.6rem !important;
+    border: none;
+    background: #eee !important;
+    a, li.menu-item a:hover {
+      color: #333 !important;
+    }
+    li {
+      border-bottom: 1px solid #333;
+    }
+    li:hover {
+      background-color: #FC5B00;
+    }
+  }
+}
+.input-group {
+  input[type='text'] {
+    height: 1.8rem;
+    background-color: transparent;
+  }
+}
+li.pt-special-dropdown.is-dropdown-submenu-parent {
+  position: unset;
+  ul {
+      &.menu.vertical {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      padding: 20px 40px 80px;
+      background-image: radial-gradient(#fff, #ccc) !important;
+      li.nav-container {
+          position: absolute;
+          bottom: 50px;
+          width: 100% !important;
+          a {
+            display: none;
+          }
+          ul {
+            display: flex;
+            left: 0px;
+            width: 100%;
+            top: 0px !important;
+            background: none !important;
+            padding: 0;
+            li {
+              width: 24%;
+              margin: 0 30px;
+              border-top: 1px solid #555;
+            }
+            a {
+              display: block;
+              padding-top: 10px;
+            }
+          }
+      }
+       &.is-dropdown-submenu > li {
+            width: 20%;
+            border-bottom: none;
+            &:hover {
+              background: none;
+            }
+            a {
+              padding: 0 1.6rem;
+              text-align: center;
+              font-weight: $global-weight-normal;
+              &:hover {
+                color:#FC5B00 !important;
+              }
+              img {
+                  padding-bottom: 10px;
+              }
+            }
+          }
+      }
+      
+      &.is-dropdown-submenu.js-dropdown-active {
+        display: flex;
+      }
+    }
+}

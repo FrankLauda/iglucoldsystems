@@ -1,0 +1,42 @@
+.footer-container {
+  @include xy-grid-container;
+  margin-top: rem-calc(60);
+  background-color: $black;
+  max-width: 100%;
+}
+
+.footer-grid {
+  @include xy-grid;
+  padding: rem-calc(60) 0;
+  border-bottom: 1px solid $medium-gray;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+
+  section {
+    @include xy-cell();
+    @include breakpoint(large) {
+      @include xy-cell(auto);
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  h6 {
+    color: #FC5B00;
+  }
+}
+
+.copyright {
+  padding: 30px;
+    p {
+      font-size: $small-font-size !important;
+      margin: 20px 0 0;
+    }
+    a {
+      font-size: 0.8rem !important;
+    }
+}

@@ -1,0 +1,221 @@
+.main-grid .main-content {
+    margin: 0 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+p, a, li {
+	font-size: 1.2rem !important;
+	font-weight: 600;
+}
+a {
+    text-transform: uppercase;
+}
+.CTA {
+	h4 {
+	padding:3rem 8rem 1rem;
+	line-height: 1.3;
+	font-size: 1.5rem
+	}
+	a {
+	border-bottom: 3px solid;
+	}
+}
+.grid-x {
+	margin-bottom: 6rem !important;
+	align-items: center;
+	.cell.large-5 {
+		padding: 7.5%;
+	}
+}
+img.hero-img {
+	width: 100%;
+	max-height: 576px;
+}
+.floating {
+    position: absolute;
+    width: 28% !important;
+    left: 55%;
+    top: 55%;
+    -webkit-transform: translate(-55%, -55%);
+    transform: translate(-55%, -55%);
+}
+.grid-x.full-width-two-thirds {
+    position: relative;
+    align-items: stretch;
+    p {
+    	margin-bottom: 0;
+    }
+}
+.hero.cell.large-5 {
+		padding: 9% 5% 7.5% 14%;
+		background: url('/proline/wp-content/themes/new-proline/dist/assets/images/sml-swirl-background.jpg') no-repeat center;
+		background-size: cover;
+	}
+.hero h1 {
+	font-size: 2.8rem;
+	font-weight: $global-weight-bold;
+}
+ul#ecom-nav {
+	list-style: none;
+	text-align: center;
+	li {
+		  	border-bottom: 1px solid #eee;
+		    margin: 0 30px;
+		    display: inline;
+		    padding-bottom: 10px;
+	 a {
+		color: #fff;
+    	padding: 0 20px;
+		}
+		a:hover {
+	    		color: #FC5B00;
+			}
+	}
+}
+.post-navigation {
+	display: none;
+}
+
+/** === Woo Commerce === */
+
+.cat-item-18 a, .cat-item-19 a {
+	display: none;
+}
+.cat-item-18.cat-parent a, .cat-item-19.cat-parent a {
+	display: block;
+}
+ul.product-categories {
+	list-style: none;
+	.children {
+		list-style: none;
+	}
+}
+.main-container .sidebar {
+	display: none;
+}
+.main-container .main-grid {
+	justify-content: center;
+}
+.main-container .main-content {
+	width: 1140px !important;
+	margin: 0 auto;
+}
+.woocommerce {
+	ul.products li.product {
+    margin: 0 3% 2.992em 3%;
+    width: 19%;
+    border-bottom: 1px solid #999;
+    &:hover {
+    	border-bottom: 5px solid #FC5B00;
+    }
+		.price {
+    	display: none;
+		}
+		a img {
+	    width: auto;
+		}
+		.woocommerce-loop-product__title {
+	    color: #fff;
+	    font-weight: bold;
+	    text-align: center;
+		}
+	}
+	a.button, a.button:hover {
+	    padding: 0 0 40px 0;
+	    color: #FC5B00;
+	    background: none;
+	    display: block;
+	}
+	time.updated, p.author {
+		display: none;
+	}
+}
+
+/** === Woo Commerce single temp === */
+
+.single-product {
+	.main-grid {
+			margin: 0;
+		}
+	.main-content {
+		width: 100% !important;
+		.grid-x.full-width-two-thirds {
+	    	clear: both;
+		}
+		.single-top {
+			&.full-width {
+		    padding: 75px 0 1px;
+		    margin-bottom: 100px;
+			}
+		    .grid-margin-x > .large-6 {
+		    width: calc(42% - 1.875rem);
+		    margin-left: 7rem;
+			}
+			.flex-control-thumbs img {
+			   width: 75% !important;
+			}
+			.zoomImg {
+			    background-color: #555 !important;
+			}
+		}
+		.related {
+			width: 1140px;
+    		margin: 0 auto;
+		}
+		.woocommerce-tabs {
+		    clear: none!important;
+		    .tabs {
+			    border: none;
+			    background: none;
+			}
+			ul.tabs {
+				padding: 0 !important;
+				li {
+					margin: 0 !important;
+					&::before, &::after {
+						display:none;
+						border:0 !important;
+					}
+					&.active {
+				    background: none !important;
+				    border:1px solid #eee;
+				    border-bottom:0;
+				    }
+					}
+				}
+			.woocommerce-Tabs-panel {
+					border: 1px solid #eee;
+				    padding: 30px !important;
+				    margin-top: -27px !important;
+					h2 {
+					display: none;
+					}
+			}
+		}
+		.icons {
+			background: url('/proline/wp-content/themes/new-proline/dist/assets/images/abstract-swirl-2.png') no-repeat center;
+			background-color: #484848;
+			background-size: 75%;
+			&.full-width {
+				padding:50px 10% 10px;
+				margin-top: 5rem;
+			}
+			.grid-x {
+				align-items: flex-end;
+				.cell {
+					text-align: center;
+					img {
+						margin-bottom: 40px;
+					}
+					h3 {
+						border-top: 1px solid #999;
+						padding-top: 15px;
+						margin: 0 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
